@@ -1,0 +1,14 @@
+{
+  "name": "mathiassalva/fitfollow",
+  "description": "workout application",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "mathias salva",
+      "email": "mattsalva@outlook.com"
+    }
+  ],
+  "require": {
+  }
+}
