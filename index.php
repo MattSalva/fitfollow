@@ -17,10 +17,10 @@
         <section>
             <h2 style="text-align: center">Workout history</h2>
                     <?php
-                    $workouts = array_diff(scandir("./workouts/files"), array('..', '.'));
+                    $workouts = array_diff(scandir("workouts/files"), array('..', '.'));
                     foreach ($workouts as $file){
                         echo "<div>";
-                        $f = "./workouts/files/". $file;
+                        $f = "workouts/files/". $file;
                         $work = fopen($f, "r");
                         $content = fread($work, filesize($f));
                         echo "<br>";
