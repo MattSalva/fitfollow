@@ -1,5 +1,5 @@
 <?php
-$db = mysqli_connect("localhost", "root", "", "fitfollow", 3307);
+$db = mysqli_connect("localhost", "id19970975_root", "Phpintermedio2023!", "id19970975_fitfollow");
 $datestring = date("Ymd",strtotime($_POST['exercisedate']));
 $file = fopen("workouts/files/workout". $datestring . ".txt", "w+");
 
@@ -27,4 +27,4 @@ echo "Workout saved in file: " . "workout". $datestring . ".txt";
 fclose($file);
 ?>
 <br>
-<a href="http://localhost:8080/fitfollow"><button>Go Back</button></a>
+<a href="https://mathiassalva.000webhostapp.com"><button>Go Back</button></a>

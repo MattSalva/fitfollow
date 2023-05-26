@@ -1,5 +1,5 @@
 <?php
-$db = mysqli_connect("localhost", "root", "", "fitfollow", 3307);
+$db = mysqli_connect("localhost", "id19970975_root", "Phpintermedio2023!", "id19970975_fitfollow");
 if (isset($_GET['routines'])){
     $q = "DELETE FROM routines WHERE id = " . $_GET['routines'];
     $res = mysqli_query($db, $q);
@@ -33,7 +33,7 @@ if (isset($_GET['routines'])){
 </form>
 
 <br>
-<a href="http://localhost:8080/fitfollow"><button>Go Back</button></a>
+<a href="https://mathiassalva.000webhostapp.com"><button>Go Back</button></a>
 
 
 </body>

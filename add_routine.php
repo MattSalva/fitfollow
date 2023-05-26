@@ -1,10 +1,10 @@
 <?php
-$db = mysqli_connect("localhost", "root", "", "fitfollow", 3307);
+$db = mysqli_connect("localhost", "id19970975_root", "Phpintermedio2023!", "id19970975_fitfollow");
 if (isset($_GET['name'])){
     $name = $_GET['name'];
     $difficulty = $_GET['difficulty'];
     $query = "INSERT INTO routines (name, difficulty) VALUES ('$name', '$difficulty')";
-    echo $query;
+    echo "<h4>Routine added successfully!</h4>";
     $res = mysqli_query($db, $query);
     $last_id = mysqli_insert_id($db);
     $fk = mysqli_query($db, "SET GLOBAL FOREIGN_KEY_CHECKS=0;");
@@ -44,4 +44,4 @@ if (isset($_GET['name'])){
 </form>
 
 <br>
-<a href="http://localhost:8080/fitfollow"><button>Go Back</button></a>
+<a href="https://mathiassalva.000webhostapp.com"><button>Go Back</button></a>

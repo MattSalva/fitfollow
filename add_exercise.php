@@ -4,9 +4,9 @@
         $sets = $_GET['sets'];
         $reps = $_GET['reps'];
         $muscle = $_GET['muscle_group'];
-        $db = mysqli_connect("localhost", "root", "", "fitfollow", 3307);
+        $db = mysqli_connect("localhost", "id19970975_root", "Phpintermedio2023!", "id19970975_fitfollow");
         $query = "INSERT INTO exercises (name, sets, reps, muscle_group) VALUES ('$name', '$sets', '$reps', '$muscle')";
-        echo $query;
+        echo "<h4>Exercise added successfully!</h4>";
         $res = mysqli_query($db, $query);
     }
 ?>
@@ -33,4 +33,4 @@
 </form>
 
 <br>
-<a href="http://localhost:8080/fitfollow"><button>Go Back</button></a>
+<a href="https://mathiassalva.000webhostapp.com"><button>Go Back</button></a>
