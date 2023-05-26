@@ -1,8 +1,12 @@
 <?php
 $db = mysqli_connect("localhost", "id19970975_root", "Phpintermedio2023!", "id19970975_fitfollow");
 if (isset($_GET['routines'])){
-    $q = "DELETE FROM routines WHERE id = " . $_GET['routines'];
+    $id = $_GET['routines'];
+    $q = "DELETE FROM exercises_routines WHERE routine_id = $id";
     $res = mysqli_query($db, $q);
+    $q = "DELETE FROM routines WHERE id = $id";
+    $res = mysqli_query($db, $q);
+    echo "<h3>Routine deleted successfully</h3>";
 }
 
 
